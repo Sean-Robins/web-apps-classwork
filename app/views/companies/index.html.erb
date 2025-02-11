@@ -1,0 +1,14 @@
+<h1>Companies</h1>
+
+<% companies = Company.all%>
+
+<p>Number of Companies: <%= companies.count%></p>
+
+<ul>
+
+  <% for company in companies %>
+
+    <li> <%= company["name"] %> </li>
+
+  <% end %>
+</ul>
